@@ -3515,6 +3515,7 @@ int janus_ice_setup_local(janus_ice_handle *handle, int offer, int audio, int vi
 		"compatibility", NICE_COMPATIBILITY_DRAFT19,
 		"main-context", handle->mainctx,
 		"reliable", FALSE,
+		"force-relay", TRUE,
 		"full-mode", janus_ice_lite_enabled ? FALSE : TRUE,
 #ifdef HAVE_ICE_NOMINATION
 		"nomination-mode", janus_ice_nomination,
